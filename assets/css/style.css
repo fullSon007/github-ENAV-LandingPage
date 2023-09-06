@@ -3,3 +3,22 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+#header {
+    background-color: #356882;
+    height: 46px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-logo__img {
+    height: 46px;
+}
+
+.nav {
+    list-style: none;
+}
+
+.nav > li {
+    display: inline-block;
+}
