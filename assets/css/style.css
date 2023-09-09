@@ -22,3 +22,8 @@
 .nav > li {
     display: inline-block;
 }
+
+.subnav {
+    list-style: none;
+    display: none;
+}
