@@ -2,9 +2,15 @@
 
 #header {
     background-color: #356882;
-    height: 46px;
+    height: 56px;
     display: flex;
     justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding-bottom: 6px;
+    border-bottom: #dbdcdd solid 2px;
 }
 
 .header-logo__img {
@@ -40,6 +46,7 @@
     position: absolute;
     background-color: orange;
     width: 242px;
+    margin-top: 10px;
     padding-bottom: 10px;
     border-radius: 4px;
     overflow: hidden;
@@ -80,6 +87,51 @@
 .nav .subnav a:hover {
     background-color: rgb(219, 172, 85);
     right: -4px;
+}
+
+#introduction {
+    display: flex;
+    align-items: center;
+}
+.intro__wrap {
+    /* display: flex;
+    align-items: center; */
+    position: relative;
+}
+
+.intro__img1 {
+    width: 48%;
+    margin-top: 98px;
+    height: 500px;
+}
+
+.intro__img2 {
+    width: 258px;
+    height: 152px;
+    margin-bottom: 292px;
+}
+
+.intro__img3 {
+    width: 258px;
+    height: 152px;
+    margin-bottom: 292px;
+
+    
+}
+
+.intro__title {
+    position: relative;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 50%; /* Đặt vị trí đứng giữa ảnh theo chiều dọc */
+    left: 50%; /* Đặt vị trí đứng giữa ảnh theo chiều ngang */
+    transform: translate(-50%, -50%); /* Để căn giữa hoàn toàn */
+    background-color: rgba(0, 0, 0, 0.7); /* Màu nền cho bảng chữ */
+    color: white; /* Màu chữ */
+    padding: 10px 20px; /* Khoảng cách giữa chữ và viền của bảng chữ */
+    font-size: 18px; /* Kích thước chữ */
 }
 
 
