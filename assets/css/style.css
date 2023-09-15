@@ -1,15 +1,14 @@
-
-
 #header {
     background-color: #356882;
     height: 56px;
     display: flex;
     justify-content: space-between;
     position: fixed;
+    z-index: 1;
     top: 0;
     left: 0;
     right: 0;
-    padding-bottom: 6px;
+    /* padding-bottom: 6px; */
     border-bottom: #dbdcdd solid 2px;
 }
 
@@ -17,29 +16,35 @@
     height: 46px;
 }
 
+.header-pack {
+    display: flex;
+    justify-content: space-between;
+}
+
 .nav {
     list-style: none;
     /* padding-right: 74px; */
 }
 
-.nav > li {
+.nav>li {
     display: inline-block;
     position: relative;
 }
 
-.nav > li > a {
+.nav>li>a {
     color: #fff;
 }
 
 .nav li a {
-    text-decoration: none; 
+    text-decoration: none;
     line-height: 46px;
     padding: 0 24px;
 }
 
 .nav li:hover a {
-    color:  #0e2a35;
+    color: #0e2a35;
 }
+
 .nav .subnav {
     list-style: none;
     display: none;
@@ -51,6 +56,16 @@
     border-radius: 4px;
     overflow: hidden;
     animation: ServiceGrowth ease-in 0.25s;
+}
+
+.nav .subnav::before {
+    content: "";
+    display: block;
+    position: absolute;
+    background-color: #000;
+    top: -16px;
+    width: 56%;
+    height: 16px;
 }
 
 @keyframes ServiceGrowth {
@@ -67,16 +82,31 @@
     display: block;
 }
 
+.nav .subnav li a {
+    max-width: 242px;
+}
+
+.nav .subnav li:first-child {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.nav .subnav li:last-child {
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
 .nav .subnav a {
     position: relative;
-    color:#000;
+    color: #000;
     font-size: 12px;
     line-height: 1rem;
     text-align: justify;
     padding: 12px 10px;
     display: block;
-    transition: right linear 0.1s ;
-    right: 0;                      /* Định nghĩa chuyển động từ 0 đến -4px khi hover */
+    transition: right linear 0.1s;
+    right: 0;
+    /* Định nghĩa chuyển động từ 0 đến -4px khi hover */
 }
 
 .nav .subnav li:hover {
@@ -87,12 +117,14 @@
 .nav .subnav a:hover {
     background-color: rgb(219, 172, 85);
     right: -4px;
+    overflow: hidden;
 }
 
 #introduction {
     display: flex;
     align-items: center;
 }
+
 .intro__wrap {
     /* display: flex;
     align-items: center; */
@@ -106,17 +138,17 @@
 }
 
 .intro__img2 {
-    width: 258px;
+    width: 261px;
     height: 152px;
-    margin-bottom: 292px;
+    margin-bottom: 300px;
 }
 
 .intro__img3 {
     width: 258px;
     height: 152px;
-    margin-bottom: 292px;
+    margin-bottom: 300px;
 
-    
+
 }
 
 .intro__title {
@@ -125,15 +157,18 @@
 
 .text-overlay {
     position: absolute;
-    top: 50%; /* Đặt vị trí đứng giữa ảnh theo chiều dọc */
-    left: 50%; /* Đặt vị trí đứng giữa ảnh theo chiều ngang */
-    transform: translate(-50%, -50%); /* Để căn giữa hoàn toàn */
-    background-color: rgba(0, 0, 0, 0.7); /* Màu nền cho bảng chữ */
-    color: white; /* Màu chữ */
-    padding: 10px 20px; /* Khoảng cách giữa chữ và viền của bảng chữ */
-    font-size: 18px; /* Kích thước chữ */
+    width: 64%;
+    height: 48%;
+    top: 74%;
+    left: 64%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 1);
+    /* Màu nền cho bảng chữ */
+    color: white;
+    /* Màu chữ */
+    padding: 10px 20px;
+    /* Khoảng cách giữa chữ và viền của bảng chữ */
+    font-size: 18px;
+    /* Kích thước chữ */
 }
-
-
-
-
