@@ -1,3 +1,6 @@
+
+/* Header */
+
 #header {
     background-color: #356882;
     height: 56px;
@@ -120,6 +123,8 @@
     overflow: hidden;
 }
 
+/* Introduction */
+
 #introduction {
     display: flex;
     align-items: center;
@@ -134,19 +139,19 @@
 .intro__img1 {
     width: 48%;
     margin-top: 98px;
-    height: 500px;
+    height: 600px;
 }
 
 .intro__img2 {
     width: 261px;
     height: 152px;
-    margin-bottom: 300px;
+    margin-bottom: 350px;
 }
 
 .intro__img3 {
     width: 258px;
     height: 152px;
-    margin-bottom: 300px;
+    margin-bottom: 350px;
 
 
 }
@@ -155,7 +160,7 @@
     position: relative;
 }
 
-.text-overlay {
+.intro__text {
     position: absolute;
     width: 64%;
     height: 48%;
@@ -171,4 +176,15 @@
     /* Khoảng cách giữa chữ và viền của bảng chữ */
     font-size: 18px;
     /* Kích thước chữ */
+}
+
+.intro__item {
+    float: left;
+    width: 33.3333%;
+    padding: 100px 8px 0 8px;
+    
+}
+
+.intro__icon {
+    margin: auto;
 }
