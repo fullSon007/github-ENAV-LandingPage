@@ -158,9 +158,6 @@
 
 }
 
-.intro__title {
-    position: relative;
-}
 
 .intro__text {
     position: absolute;
@@ -222,4 +219,50 @@
 
 .intro__icon {
     
+}
+
+/* Doings part */
+
+#Doings {
+    padding-top: 50px;
+    border-radius: 10px;
+    height: 500px;
+    background-color: #66121f;
+}
+
+.Do__wrap {
+    
+    display: flex;
+    justify-content: space-between;
+}
+
+.Do__solution {
+    flex: 1;
+}
+
+.Do__content {
+    flex: 1;
+}
+
+.Do__AIS {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Do__AIS-Script {
+    
+}
+
+.Do__AIS-feature {
+    float: left;
+    width: 33.3333%;
+}
+
+.Do__AIS-img {
+    
+}
+
+.Do__AIS-img1 {
+    height: 374px;
+    width: 548px;
 }
