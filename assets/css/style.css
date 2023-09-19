@@ -145,13 +145,13 @@
 }
 
 .intro__img2 {
-    width: 261px;
+    width: 279px;
     height: 152px;
     margin-bottom: 360px;
 }
 
 .intro__img3 {
-    width: 258px;
+    width: 279px;
     height: 152px;
     margin-bottom: 360px;
 
@@ -161,7 +161,7 @@
 
 .intro__text {
     position: absolute;
-    width: 64%;
+    width: 71%;
     height: 51%;
     top: 74%;
     left: 64%;
@@ -224,42 +224,106 @@
 /* Doings part */
 
 #Doings {
-    padding-top: 50px;
+    padding: 50px 5px 10px;
+    margin-top: 50px;
     border-radius: 10px;
-    height: 500px;
-    background-color: #66121f;
+    height: 600px;
+    background-color: #0f2a37;
+    display: flex;
+    overflow: hidden;
 }
 
 .Do__wrap {
-    
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    flex: 1;
+    padding-right: 4px;
 }
 
 .Do__solution {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.Do__solution h2 {
+    color: #ffdd34;
+}
+
+.Do__solution p {
+    color: #fff;
+    font-weight: bold;
+    margin-top: 15px;
+    font-size: 40px;
+}
+
+
+
+.Do__AIS {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     flex: 1;
 }
 
 .Do__content {
     flex: 1;
+    color: #fff;
 }
 
-.Do__AIS {
-    display: flex;
-    justify-content: space-between;
+.Do__AIS a {
+    text-decoration: none;
 }
+
+.Do__btn {
+    display: block;
+    margin-top: 8px;
+    padding: 8px 20px;
+    border-radius: 20px;
+    border: solid 0;
+    background-color: #ffdd34;
+    cursor: pointer;
+}
+
+
+
 
 .Do__AIS-Script {
-    
+   flex: 1;
+   border-top: solid #dbdcdd 1px;
+   padding-top: 17px;
+   color : #fff;
+
+}
+
+.Do__AIS-Script a {
+    text-decoration: none;
+}
+
+.Do__AIS-btn {
+    display: block;
+    margin: auto;
+    padding: 8px 20px;
+    border-radius: 20px;
+    border: solid 0;
+    background-color: #ffdd34;
+    cursor: pointer;
 }
 
 .Do__AIS-feature {
     float: left;
     width: 33.3333%;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.check-box {
+    color: #ffdd34;
 }
 
 .Do__AIS-img {
-    
+    flex: 1;
 }
 
 .Do__AIS-img1 {
