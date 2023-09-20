@@ -128,7 +128,7 @@
 #introduction {
     display: flex;
     align-items: center;
-    padding-bottom: 68px;
+    padding-bottom: 50px;
     border-bottom: solid #dbdcdd 0.9px;
 }
 
@@ -226,6 +226,7 @@
 #Doings {
     padding: 50px 5px 10px;
     margin-top: 50px;
+    margin-bottom: 50px;
     border-radius: 10px;
     height: 600px;
     background-color: #0f2a37;
@@ -329,4 +330,47 @@
 .Do__AIS-img1 {
     height: 374px;
     width: 548px;
+}
+
+/* Ourparters part */
+
+#Ourparters {
+    margin: 50px auto;
+}
+
+.partner__bground {
+    width: 100%;
+    height: 80vh;
+    /* background-image: url(./); */
+    /* background-size: cover;
+    background-repeat: no-repeat; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.partner__text {
+    color: #fff;
+    font-size: 54px;
+    font-weight: bold;
+}
+
+.partner__btn {
+    margin-top: 8px;
+    padding: 10px;
+    border-radius: 20px;
+    border: #fff;
+    background-color: #ffdd34;
+    cursor: pointer;
+}
+
+.partner__img {
+    display: flex;
+    max-width: 100%;
+}
+
+.partners {
+    width: 20%;
+    padding: 24px 16px;
 }
