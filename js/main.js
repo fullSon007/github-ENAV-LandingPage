@@ -1,7 +1,7 @@
 
 let currentSlide = 0;
 const slides = document.querySelectorAll('.service__slide');
-
+const orders = document.querySelectorAll('.slide-item')
 // console.log(slides);
 
 function showSlide(n) {
@@ -13,6 +13,13 @@ function showSlide(n) {
   slides.forEach((slide, index) => {
     slide.style.display = index === currentSlide ? 'block' : 'none';
   });
+
+  orders.forEach((order, index) => {
+    if(index === currentSlide) {
+      order.classList.add('slide-item--active');
+    }
+    else order.classList.remove('slide-item--active');
+  })
 }
 
 function nextSlide() {
