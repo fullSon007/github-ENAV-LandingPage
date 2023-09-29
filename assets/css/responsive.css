@@ -1,0 +1,87 @@
+
+/* Tablet */
+@media (max-width: 1023px) and (min-width:740px)
+{
+
+.grid {
+    width: 740px;
+    max-width: 100%;
+}   
+
+#bag {
+    height: 398vh;
+    background-color: #356882;
+}
+
+/* introduction  */
+
+#introduction {
+    padding-bottom: 25px;
+}    
+
+.intro__img1 {
+    width: 100%;
+    margin-top: 98px;
+    height: 486px;
+}
+
+.intro__img2 {
+    width: 49%;
+    margin-right: 2px;
+}
+
+.intro__img3 {
+    width: 50%;
+}
+
+.intro__text {
+    width: 100%;
+    height: 29%;
+    top: 82%;
+    left: 50%;
+}
+
+/* Doings */
+#Doings {
+    display: block;
+    height: 85vh;
+}
+
+.Do__solution {
+    margin-bottom: 2vh;
+}
+
+.Do__AIS-Script {
+    padding: 17px 0 28px;
+    border-bottom: solid #dbdcdd 1.5px;
+}
+
+.Do__content {
+    padding: 20px 0;
+}
+
+.Do__AIS-img1 {
+    width: 100%;
+    border-radius: 12px;
+}
+
+/* Ourparters */
+
+.partner__bground {
+    height: 44vh;
+}
+
+/* Ourservices */
+
+.service__slide {
+    height: 44vh;
+}
+
+.footer-sub {
+    height: 64px;
+}
+.footer-sub-btn {
+    padding: 11px 20px;
+}
+
+}
