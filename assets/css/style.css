@@ -649,6 +649,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: relative;
 }
 
 .footer-sub-text {
@@ -660,7 +661,6 @@
     border-radius: 29px;
     border: none;
     cursor: pointer;
-    
     background-color: #ffe036;
 }
 
@@ -668,4 +668,20 @@
     color: #000;
     font-size: 15px;
     text-decoration: none;
+}
+
+.toTopBtn {
+    position: fixed;
+    bottom: 6%;
+    right: 10px;
+    height: 26px;
+    padding: 8px;
+    z-index: 6;
+    border: none;
+    border-radius: 4px;
+}
+
+.toTopBtn:hover {
+    cursor: pointer;
+    background-color: #ffe036;
 }
