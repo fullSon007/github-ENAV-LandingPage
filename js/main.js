@@ -57,3 +57,25 @@ document.getElementsByClassName('toTopBtn')[0].addEventListener("click", functio
   document.body.scrollTop = 0; // Đối với Safari
   document.documentElement.scrollTop = 0; // Đối với Chrome, Firefox, IE, và Opera
 });
+
+
+// Menu Mobile
+
+const header = document.getElementById('header');
+// const introEle = 
+// console.log(header)
+
+const menu = document.getElementById('menu-mobile');
+const currentHeight = header.clientHeight;
+menu.onclick = function() {
+  var isClosed = header.clientHeight === currentHeight;
+  if (isClosed) {
+    header.style.height = 'auto';}
+  else {
+    header.style.height = null;
+  }
+}
+
+document.getElementById('introduction').addEventListener("click", function(){
+    header.style.height = null;
+});

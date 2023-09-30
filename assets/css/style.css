@@ -123,6 +123,20 @@
     overflow: hidden;
 }
 
+.menu-btn {
+    line-height: 56px;
+    color: #ccc;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0 21px;
+    display: none;
+}
+
+.menu-btn:hover {
+    background-color: #0f2a37;
+}
+
 /* Introduction */
 
 #introduction {
