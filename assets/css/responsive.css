@@ -11,6 +11,37 @@
         background-color: #356882;
     }
 
+    /* menu mobile */
+
+    #header {
+        overflow: hidden;
+    }
+
+    .header-pack {
+        display: block;
+    }
+
+    .nav .subnav {
+        position: initial;
+        width: 100%;
+        animation: none;
+    }
+
+    .nav .subnav li a {
+        max-width: 100%;
+    }
+
+    .nav .subnav::before {
+        display: none;
+    }
+
+    .nav>li {
+        display: block;
+    }
+
+    .menu-btn {
+        display: block;
+    }
     /* introduction  */
 
     #introduction {
